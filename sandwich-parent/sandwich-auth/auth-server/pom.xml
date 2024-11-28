@@ -19,6 +19,12 @@
 
     <dependencies>
 
+        <dependency>
+            <groupId>com.lww</groupId>
+            <artifactId>sandwich-starter-redis</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+
         <!--oauth2-authorization-server-->
         <dependency>
             <groupId>org.springframework.boot</groupId>
