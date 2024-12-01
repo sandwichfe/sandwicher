@@ -9,6 +9,19 @@ logging:
         security: trace
 
 spring:
+  data:
+    redis:
+      host: 49.235.149.110
+      port: 6379
+      password: ENC(uJjGYgAuROdH+xJKEyeznHV8RL2zz1I/58iwtDQ8KlPHMuW4qNRkNHFaw0m2EnRE)
+      jedis:
+        pool:
+          max-idle: 500
+          min-idle: 50
+          max-active: 2000
+          max-wait: 1000
+      timeout: 5000
+
   datasource:
     url: jdbc:mysql://localhost:3306/authorization_server_db?useUnicode=true&characterEncoding=utf-8&useSSL=false&allowMultiQueries=true&allowPublicKeyRetrieval=true&serverTimezone=Asia/Shanghai
     username: root
